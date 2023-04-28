@@ -1,0 +1,20 @@
+﻿<Window
+    x:Class="StationViewerApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:StationViewerApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:StationViewer="clr-namespace:StationViewer;assembly=StationViewer"
+    Width="980"
+    Height="753"
+    mc:Ignorable="d"
+    Title="MainWindow">
+
+    <Grid Margin="0,0,0,0">
+        <StationViewer:StationViewer x:Name="StationPreview" Margin="2,91,0,0" />
+        <Button x:Name="Button_LoadStation" Content="Open station file" HorizontalAlignment="Left" Margin="35,28,0,0" VerticalAlignment="Top" Height="26" Width="121" Click="Button_LoadStation_Click"/>
+    </Grid>
+
+
+</Window>
